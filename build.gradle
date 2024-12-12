@@ -14,8 +14,12 @@ dependencies {
     testImplementation 'junit:junit:4.11'
 }
 
+application {
+    mainClass.set("src/main/java/SwingDemo.java") // Указываем полный путь до основного класса
+}
+
 launch4j {
     outfile = "${project.name}.exe"
-    mainClassName = "SwingDemo"
+    mainClassName = application.mainClass.get() // Используем тот же главный класс, что и в application
     icon = file('android.png')
 }
