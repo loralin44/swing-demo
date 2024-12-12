@@ -1,9 +1,7 @@
-*.class
+.gradle/
+.idea/
 build/
-gradle/
-gradlew
-gradlew.bat
-*.iml
-settings.gradle
-.gradle
-.idea
+!/.gradle/
+!/gradle/
+!/gradlew
+!/gradlew.bat
