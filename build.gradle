@@ -15,7 +15,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("src/main/java/SwingDemo.java")
+    mainClass.set("SwingDemo") 
 }
 
 launch4j {
