@@ -15,11 +15,11 @@ dependencies {
 }
 
 application {
-    mainClass.set("src/main/java/SwingDemo.java") // Указываем полный путь до основного класса
+    mainClass.set("src/main/java/SwingDemo.java")
 }
 
 launch4j {
-    outfile = "${project.name}.exe"
-    mainClassName = application.mainClass.get() // Используем тот же главный класс, что и в application
-    icon = file('android.png')
+
+    mainClassName = application.mainClass.get()
+
 }
