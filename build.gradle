@@ -19,7 +19,7 @@ application {
 }
 
 launch4j {
-
+    outfile = "${project.name}.exe"
     mainClassName = application.mainClass.get()
-
+    icon = file('android.png')
 }
