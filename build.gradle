@@ -10,6 +10,8 @@
 // Apply the java plugin to add support for Java
 plugins {
     id 'java'
+    id 'application'
+    id 'org.dante.toolbox.launch4j' version '2.6.0'
 
 }
 
@@ -30,4 +32,10 @@ dependencies {
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
     testImplementation 'junit:junit:4.11'
+}
+
+launch4j {
+    outfile = "${project.name}.exe"
+    mainClassName = "src/main/java/SwingDemo.java"
+    icon = file('android.png')
 }
