@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id "com.github.johnrengelman.shadow" version "7.1.2"
-    id 'edu.sc.seis.launch4j' version '2.5.4'
+    id 'edu.sc.seis.launch4j' version '3.0.6'
 }
 
 repositories {
@@ -19,7 +19,5 @@ application {
 }
 
 launch4j {
-    outfile = "${project.name}.exe"
-    mainClassName = application.mainClass.get()
-    icon = file('android.png')
+    mainClassName = 'src/main/java/SwingDemo.Start'
 }
